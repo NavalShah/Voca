@@ -6,6 +6,13 @@ textarea {
   margin-top: 5px;
 }
 
+h1{
+  display: inline;
+  align-items: center;
+  place-self: center;
+  font-size: small;
+}
+
 /* summernote container */
 .note-editor.note-frame {
   border-top: 0px;
@@ -15,13 +22,13 @@ textarea {
 
 /* summernote button */
 .note-btn-group .note-btn {
-  background-color: darkseagreen;
+  background-color: rgb(143, 171, 188);
   border: 0px;
   font-size: 15px !important;
 }
 
 .note-toolbar {
-  background-color: darkseagreen !important;
+  background-color: rgb(146, 143, 188) !important;
 }
 
 .note-editor.note-airframe,
@@ -32,7 +39,7 @@ textarea {
 /* Bend toolbar with navbar */
 .note-toolbar.panel-heading {
   padding-left: 1%;
-  background-color: darkseagreen;
+  background-color: rgb(55, 156, 219);
 }
 
 /* Make larger buttons in the toolbar*/
@@ -46,7 +53,7 @@ textarea {
   margin: auto;
   background-color: white;
   border: 0px;
-  background-color: darkseagreen !important;
+  background-color: rgb(55, 156, 219) !important;
   border-radius: 15px 15px 0px 0px;
   margin-top: 1%;
   padding-top: 0px;
@@ -121,7 +128,7 @@ textarea {
 }
 
 .popover-content li:active {
-  background-color: lightgreen;
+  background-color: rgb(144, 219, 238);
   cursor: pointer;
 }
 
