@@ -1,24 +1,15 @@
 from flask import Flask, request, jsonify, render_template, session
 from flask_session import Session
-#import gensim.models.keyedvectors as word2vec
-#from gensim.similarities.index import AnnoyIndexer
 from flask import jsonify
 from numpy.linalg import norm
 import numpy as np
-#from gensim.models import KeyedVectors
-#from gensim.scripts.glove2word2vec import glove2word2vec
 from scipy.spatial.distance import cosine
 import json
 from datetime import datetime
 import os
-#from difflib import get_close_matches
 from flask import make_response
 from functools import wraps, update_wrapper
 import re
-#from py_thesaurus import Thesaurus
-#from thesaurus import Word
-#import nltk
-# nltk.download('stopwords')
 from sklearn import svm
 import sys
 import pickle
