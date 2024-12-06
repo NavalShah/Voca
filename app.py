@@ -16,6 +16,8 @@ import pickle
 from scipy.stats import entropy
 import spacy
 import socket
+#Let's try and do tensorflow stuff later. I also want to add sentiment analysis with voice detection to enhace
+#this stuff.
 
 
 app = Flask(__name__, static_url_path='', static_folder='', template_folder='templates')
