@@ -64,6 +64,7 @@ python -m spacy download en_core_web_sm
 ### Step 5: Verify Data Files
 
 Ensure the following data files are present in the `data/` directory:
+
 - `phonetic_embd.pickle` - Phonetic embeddings for ~116,000 words
 - `default_content.txt` - Sample text for testing
 - `TED_transcripts.csv` - TED talk transcripts dataset
@@ -82,6 +83,7 @@ The application will start on `http://localhost:5000` by default.
 ### Access the Application
 
 Open your web browser and navigate to:
+
 ```
 http://localhost:5000
 ```
@@ -103,11 +105,13 @@ http://localhost:5000
 ### Features in Detail
 
 #### Text Editor
+
 - Supports rich text formatting
 - Real-time word highlighting
 - Click on highlighted words to see and select alternatives
 
 #### Preferences Modal
+
 - **Easy Words**: Add words you find easy to pronounce
 - **Difficult Words**: Add words you find challenging
 - **Confidence Threshold**: Adjust sensitivity (0-100%)
@@ -115,11 +119,13 @@ http://localhost:5000
   - Higher values: Only very difficult words highlighted
 
 #### Active Learning
+
 - The system identifies words it's uncertain about
 - You label them as "Easy" or "Difficult"
 - This feedback improves future predictions
 
 #### Alternative Words
+
 - Hover over highlighted words to see suggestions
 - Click to replace with an easier alternative
 - Alternatives are phonetically similar but easier to pronounce
@@ -151,13 +157,16 @@ Voca-Research/
 ### Common Issues
 
 1. **"Module not found" errors**
+
    - Ensure you've activated the virtual environment
    - Run `pip install -r req.txt` again
 
 2. **spaCy model not found**
+
    - Run `python -m spacy download en_core_web_sm`
 
 3. **Port already in use**
+
    - Change the port in app.py or kill the process using port 5000
 
 4. **Missing data files**
@@ -167,6 +176,7 @@ Voca-Research/
 ### Session Issues
 
 The application uses file-based sessions. If you encounter session-related errors:
+
 ```bash
 # Clear session files
 rm -rf flask_session/*
@@ -177,6 +187,7 @@ rm -rf flask_session/*
 ### Running in Debug Mode
 
 Modify the last line in `app.py`:
+
 ```python
 app.run(debug=True)
 ```
@@ -184,6 +195,7 @@ app.run(debug=True)
 ### Research Notebooks
 
 The `notebook/` directory contains Jupyter notebooks documenting the research:
+
 - `engine.ipynb` - Core ML engine development
 - `alternate_words.ipynb` - Alternative word generation research
 - `preprocessing phonetic embedding.ipynb` - Phonetic embedding creation
@@ -210,6 +222,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
+- Bhavya Ghai for the Amazing Research Paper and the idea
 - CMU Pronouncing Dictionary for phonetic data
 - spaCy for natural language processing
 - Datamuse API for word alternatives
